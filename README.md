@@ -2,10 +2,10 @@
 
 This is a program that allows users to trade different items with each other.
 
-# Illustrations
+## Illustrations
 See testing videos from: https://drive.google.com/drive/folders/1unT-WmSSiGtjKi7qOSXFZHjPwjTrSJvI?usp=sharing
  
-# Table of contents
+## Table of contents
  | File | Content |
  |------|:---------------|
  |`FeatureList.md`|the features we have done for phase 2|
@@ -13,7 +13,7 @@ See testing videos from: https://drive.google.com/drive/folders/1unT-WmSSiGtjKi7
  |`DesignPattern.md`|the design patterns we have applied with detailed explanations|
  |`src/Main/mainRun.java`|main test file; start testing the functionalities from here :)|
  
-# Prerequisites
+## Prerequisites
   - Language: Java
   - IntelliJ
 --- 
@@ -24,7 +24,7 @@ See testing videos from: https://drive.google.com/drive/folders/1unT-WmSSiGtjKi7
   - Do **NOT** quit the whole program or stop the execution of program when running tests, 
   **follow the menu to exit instead**.
 
-# Tests
+## Tests
 Run `phase2/src/Main/mainRun`. To simplify the testing, we provide **three** login windows 
 so that 3 users can log in and communicate through the application at the same time.
 
@@ -44,7 +44,7 @@ For better testing all the available functionality, you need to:
   - add items into at least two users' lend wish list.
 
 
-# Authors and Contribution 
+## Authors and Contribution 
 *(names listed in no particular order)
 
 | Name | Divide of work |
@@ -56,43 +56,43 @@ For better testing all the available functionality, you need to:
 |**Siwei Tang**|AdminUser & ClientUser, Mandatory Extension 5|
 
 
-# Scope of functionalities 
+## Scope of functionalities 
 
-## For both regular users and admins:
-### 1 - Editing basic information
+### For both regular users and admins:
+#### 1 - Editing basic information
 - Change password
 
-### 2 - Inventory
+#### 2 - Inventory
 - Users can view all available items in Market.
 - Users can add items to WishList-Lend.
 - Users can add items to WishList-Borrow (with item suggestion).
-### 3 - Trade System
+#### 3 - Trade System
 - Users can request trades with other users.
 - User can agree/decline the trade requests from other users.
 - Users can complete trades (by entering Meeting System).
 - Users can view their history of complete trades.
 
-### 4 - Meeting System (within Trade)
+#### 4 - Meeting System (within Trade)
 - Users can set up the time and place for meeting.
 - Users can agree/edit the time and place for meeting in turns.
 - Users can confirm the meeting after it has happened.
 
-### 5 - Point System
+#### 5 - Point System
 - Users will get bonus points for each complete trade.
 - Users can redeem points for bonus trades which do not count into any trade limits.
 
-### 6 - Setting account status
+#### 6 - Setting account status
 - Users can set their accounts to be "left away" status for set periods.
 
-### 7 - Request Unfreeze
+#### 7 - Request Unfreeze
 - Users can make unfreeze request to admins
 
-## For admins only:
-### 1 - Freeze/Unfreeze ClientUser
+### For admins only:
+#### 1 - Freeze/Unfreeze ClientUser
 - The admins can set selected ClientUser to freeze status manually.
 - The admins can unfreeze the accounts of selected ClientUsers
 
-### 2 - ClientUser Limit System
+#### 2 - ClientUser Limit System
 The admins can change the default limit value for client users.
 
 The thresholds that can be changed:
@@ -101,18 +101,18 @@ The thresholds that can be changed:
 - Difference between borrow and lend
 - Exchange standard for bonus points
 
-### 3 - Creating new admins
+#### 3 - Creating new admins
 - The admins can create other admin accounts in the system.
 
-## Terms in the Program
+### Terms in the Program
 
-### User Account Statuses
+#### User Account Statuses
 | Type |
 |------:|
 |`freeze status`|
 |`left status`|
 
-### Limits
+#### Limits
 | Limits | Default Value | Meaning |
 |:------|:---------------:|:---------------|
 |Trade Limit            |5|The limit of trade in a week |
@@ -121,13 +121,13 @@ The thresholds that can be changed:
 |Points exchange for Bonus Trade|5|The number of points needed to exchange for one bonus trade |
 |Meeting Edit Limit     |3|If either one of two users does NOT agree meeting proposal before their **4th** time edition (i.e. edits its 4th time), the meeting will be cancelled|
 
-### Lists in Inventory:
+#### Lists in Inventory:
 | List Type | Meaning |
 |------:|:---------------|
 |WishList-Borrow|displays all wish-to-borrow items (from other users), i.e. a wishlist|
 |WishList-Lend|displays all wish-to-lend items (to other users), which passed Admin's inspect|
 
-### Trade Types:
+#### Trade Types:
 | Type | Meaning |
 |------:|:---------------|
 |one way (temporary)|one item in trade, two meetings involved|
@@ -135,7 +135,7 @@ The thresholds that can be changed:
 |two way (temporary)|two items in trade, two meetings involved|
 |two way (permanent)|two items in trade, one meeting involved|
 
-### Trade Statuses:
+#### Trade Statuses:
 | Status | Meaning |
 |------:|:---------------|
 |`unconfirmed`| the trade is requested by user through an item, but not yet confirmed by the other user|
@@ -143,7 +143,7 @@ The thresholds that can be changed:
 |`incomplete`|  user choose to confirm the trade, but the trade hasn't been completed|
 |`completed`|   the meeting is complete for permanent trade and the second meeting is complete for temporary trade|
 
-### Meeting Statuses:
+#### Meeting Statuses:
 | Status | Meaning |
 |------:|:---------------|
 |`DNE`|          when meeting is not yet set up|
@@ -153,5 +153,5 @@ The thresholds that can be changed:
 |`COMPLETED`|    when both users confirmed the meeting occurred|
 
 
-# Examples of use
+## Examples of use
 Please see `VideoAccess.md`.
