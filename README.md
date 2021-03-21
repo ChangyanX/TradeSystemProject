@@ -154,4 +154,4 @@ The thresholds that can be changed:
 
 
 ## Examples of use
-Please see `VideoAccess.md`.
+Please see `VideoAccess.md`in phase 2.
